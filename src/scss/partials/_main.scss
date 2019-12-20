@@ -1,3 +1,275 @@
 .main {
-
+  section.vitual {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    .tier_one {
+      margin: 8em 0em 0em;
+      width: 100%;
+      .container {
+        padding: 2em 4em;
+        .h3ro {
+          position: relative;
+          z-index: 2;
+          h1 {
+            font-size: 54px;
+            line-height: 1.3em;
+            padding-right: 9em;
+          }
+          p {
+            font-size: 1.5em;
+            margin: 0em 8px;
+            color: rgba($blue, 0.6);
+          }
+        }
+      }
+    }
+    .deco-bg {
+      position: absolute;
+      top: 0em;
+      bottom: 0em;
+      right: 0em;
+      .slant-deco {
+        transform: matrix3d(
+          1,
+          0,
+          0,
+          0,
+          -0.57735,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -64.7074,
+          0,
+          0,
+          1
+        );
+        height: 100vh;
+        width: 28em;
+        background: $pink;
+        position: absolute;
+        top: 0em;
+        right: 9.5em;
+        z-index: 1;
+      }
+      .balance {
+        width: 28em;
+        height: 100vh;
+        position: absolute;
+        top: 0em;
+        right: 0em;
+        background: $pink;
+        z-index: 1;
+      }
+    }
+  }
+  section.aboutUs {
+    position: relative;
+    .tier_one {
+      .container {
+        padding: 8em 4em 3em;
+        .story {
+          width: 500px;
+          h2 {
+            font-size: 68px;
+            background-image: url("../img/png/brick.png");
+            -webkit-background-clip: text;
+            background-size: 521px auto;
+            background-clip: text;
+            background-position: 70% center;
+            will-change: background-position;
+            color: transparent;
+            width: fit-content;
+            padding-right: 2em;
+          }
+          p {
+            padding-right: 1.5em;
+            color: rgba($blue, 0.6);
+            font-size: 14px;
+            line-height: 28px;
+            margin-bottom: 0em;
+          }
+        }
+      }
+    }
+    .deco-bg {
+      position: absolute;
+      top: 0em;
+      bottom: 0em;
+      right: 0em;
+      .slant-deco {
+        transform: matrix3d(
+          1,
+          0,
+          0,
+          0,
+          0.57735,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -64.7074,
+          0,
+          0,
+          1
+        );
+        height: 100vh;
+        width: 28em;
+        background: $pink;
+        position: absolute;
+        top: 0em;
+        right: 9.5em;
+        z-index: 1;
+      }
+      .balance {
+        width: 28em;
+        height: 100vh;
+        position: absolute;
+        top: 0em;
+        right: 0em;
+        background: $pink;
+        z-index: 1;
+        .bind-ball {
+          position: absolute;
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          background: rgba($pink, 0.6);
+          border-radius: 1px solid rgba($blue, 0.4);
+          bottom: 0em;
+        }
+      }
+    }
+  }
+  section.services {
+    position: relative;
+    background: $pink;
+    overflow: hidden;
+    z-index: 3;
+    .tier_one {
+      .container {
+        padding: 8em 4em;
+        .story {
+          position: relative;
+          z-index: 3;
+          h2 {
+            font-size: 68px;
+            background-image: url("../img/png/mountain.png");
+            -webkit-background-clip: text;
+            background-size: 521px auto;
+            background-clip: text;
+            background-position: 70% center;
+            will-change: background-position;
+            color: transparent;
+            width: fit-content;
+            padding-right: 2em;
+          }
+          p.note {
+            padding-right: 1.5em;
+            color: $white;
+            font-size: 14px;
+            line-height: 28px;
+          }
+          .row .col-lg-6 {
+            .card {
+              padding: 1.2em;
+              border: none;
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+              border-radius: 10px;
+              box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+              margin-bottom: 2em;
+              .icon {
+                display: flex;
+                justify-content: flex-start;
+                img {
+                  width: 50px;
+                }
+              }
+              h4 {
+                font-weight: 500;
+                color: #063a4f;
+                font-size: 15px;
+                margin-top: 1.5em;
+              }
+              p {
+                color: rgba($blue, 0.4);
+                font-size: 13px;
+                line-height: 185%;
+              }
+              &:hover {
+                background: #b2e9ff;
+                box-shadow: 0 16px 14px rgba(0, 0, 0, 0.1);
+                .icon {
+                  img {
+                    filter: saturate(0);
+                  }
+                }
+                h4 {
+                  color: $blue;
+                }
+                p {
+                  color: $black;
+                }
+              }
+            }
+            &:nth-child(5) {
+              margin-top: -4.5em;
+            }
+          }
+        }
+      }
+    }
+    .deco-bg {
+      position: absolute;
+      top: 0em;
+      bottom: 0em;
+      right: 0em;
+      .slant-deco {
+        transform: matrix3d(
+          1,
+          0,
+          0,
+          0,
+          -0.57735,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          -64.7074,
+          0,
+          0,
+          1
+        );
+        height: 100%;
+        width: 23em;
+        background: $white;
+        position: absolute;
+        top: 0em;
+        right: 15em;
+        z-index: 1;
+      }
+      .balance {
+        width: 14em;
+        height: 100%;
+        position: absolute;
+        top: 0em;
+        right: 0em;
+        background: transparent;
+        z-index: 1;
+      }
+    }
+  }
 }

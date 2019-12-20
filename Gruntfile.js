@@ -9,7 +9,7 @@
 /**
  * Livereload and connect variables
  */
-var LIVERELOAD_PORT = 35729;
+var LIVERELOAD_PORT = 50018;
 var lrSnippet = require("connect-livereload")({
   port: LIVERELOAD_PORT
 });
@@ -85,7 +85,7 @@ module.exports = function(grunt) {
      */
     connect: {
       options: {
-        port: 9992,
+        port: 5092,
         hostname: "*"
       },
       livereload: {
@@ -107,18 +107,6 @@ module.exports = function(grunt) {
         "<%= project.assets %>/css/style.unprefixed.css",
         "<%= project.assets %>/css/style.prefixed.css"
       ]
-    },
-
-    /**
-     * JSHint
-     * https://github.com/gruntjs/grunt-contrib-jshint
-     * Manage the options inside .jshintrc file
-     */
-    jshint: {
-      files: ["src/js/*.js", "Gruntfile.js"],
-      options: {
-        jshintrc: ".jshintrc"
-      }
     },
 
     /**
@@ -232,6 +220,19 @@ module.exports = function(grunt) {
     },
 
     /**
+     * Build bower components
+     * https://github.com/yatskevich/grunt-bower-task
+     */
+    bower: {
+      dev: {
+        dest: "<%= project.assets %>/components/"
+      },
+      dist: {
+        dest: "<%= project.assets %>/components/"
+      }
+    },
+
+    /**
      * Opens the web server in the browser
      * https://github.com/jsoverson/grunt-open
      */
@@ -250,7 +251,7 @@ module.exports = function(grunt) {
     watch: {
       concat: {
         files: "<%= project.src %>/js/{,*/}*.js",
-        tasks: ["concat:dev", "jshint"]
+        tasks: ["concat:dev"]
       },
       sass: {
         files: "<%= project.src %>/scss/{,*/}*.{scss,sass}",
@@ -276,9 +277,9 @@ module.exports = function(grunt) {
    */
   grunt.registerTask("default", [
     "sass:dev",
+    "bower:dev",
     "autoprefixer:dev",
     "cssmin:dev",
-    "jshint",
     "concat:dev",
     "usebanner",
     "connect:livereload",
@@ -293,10 +294,10 @@ module.exports = function(grunt) {
    */
   grunt.registerTask("build", [
     "sass:dist",
+    "bower:dist",
     "autoprefixer:dist",
     "cssmin:dist",
     "clean:dist",
-    "jshint",
     "uglify",
     "usebanner"
   ]);

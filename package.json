@@ -1,14 +1,14 @@
 {
-  "name": "fireshell",
-  "title": "Fiercely quick and opinionated front-ends",
-  "url": "http://getfireshell.com",
-  "author": "Todd Motto",
-  "copyright": "2013",
+  "name": "softkodaz",
+  "title": "Softkodaz Solutions is an Information Technology Company which specializes in delivering innovative solutions to the African Business Market and the World at large",
+  "url": "http://softkodaz.com.ng",
+  "author": "Andrew Wams",
+  "copyright": "2019",
   "version": "1.1.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "http://github.com/toddmotto/fireshell.git"
+    "url": "https://github.com/AndyWams/softkodaz.git"
   },
   "devDependencies": {
     "connect-livereload": "^0.5.4",
@@ -27,8 +27,5 @@
     "grunt-open": "^0.2.3",
     "load-grunt-tasks": "~3.4.1",
     "serve-static": "^1.10.2"
-  },
-  "scripts": {
-    "postinstall": "node_modules/.bin/bower install"
   }
 }

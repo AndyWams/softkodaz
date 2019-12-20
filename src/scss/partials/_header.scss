@@ -1,10 +1,60 @@
-.header {
+.home {
+  header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 50;
 
-}
-.logo {
-  margin: -100px 0 0 -84px;
-  @include position(absolute, 50% 0 0 50%);
-  img {
-
+    .container {
+      padding: 4em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a {
+        display: flex;
+        width: fit-content;
+        img {
+          width: 8em;
+        }
+      }
+      nav ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding-left: 0em;
+        margin-bottom: 0em;
+        li {
+          margin-right: 2em;
+          span {
+            background-color: $white;
+            border-radius: 50%;
+            text-align: center;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.1s ease-in;
+            cursor: pointer;
+            font-size: 12px;
+            i.fab {
+              color: $pink;
+            }
+            a {
+              text-decoration: none;
+              background-color: transparent;
+            }
+            &:hover {
+              background: $pink;
+              border: 1px solid $white;
+              i.fab {
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
