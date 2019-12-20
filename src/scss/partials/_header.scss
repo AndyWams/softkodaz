@@ -27,7 +27,7 @@
         li {
           margin-right: 2em;
           span {
-            background-color: $white;
+            background-color: #fce4ec;
             border-radius: 50%;
             text-align: center;
             width: 40px;
@@ -47,9 +47,8 @@
             }
             &:hover {
               background: $pink;
-              border: 1px solid $white;
               i.fab {
-                color: $white;
+                color: #fff;
               }
             }
           }

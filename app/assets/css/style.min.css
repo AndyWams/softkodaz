@@ -13,7 +13,12 @@
 body {
   box-sizing: content-box;
   text-rendering: geometricPrecision;
-  font-family: "Gothic A1", sans-serif;
+}
+body h1, body h2, body h3, body h4 {
+  font-family: "Oxygen", sans-serif;
+}
+body p {
+  font-family: "Roboto", sans-serif;
 }
 
 .home header {
@@ -61,7 +66,7 @@ body {
   margin-right: 2em;
 }
 .home header .container nav ul li span {
-  background-color: #ffff;
+  background-color: #fce4ec;
   border-radius: 50%;
   text-align: center;
   width: 40px;
@@ -89,10 +94,9 @@ body {
 }
 .home header .container nav ul li span:hover {
   background: #f50c4a;
-  border: 1px solid #ffff;
 }
 .home header .container nav ul li span:hover i.fab {
-  color: #ffff;
+  color: #fff;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .home header .container nav ul li span {
@@ -139,9 +143,11 @@ body {
   z-index: 2;
 }
 .main section.vitual .tier_one .container .h3ro h1 {
-  font-size: 54px;
-  line-height: 1.3em;
-  padding-right: 9em;
+  font-size: 5.4em;
+  line-height: 1.1em;
+  padding-right: 6em;
+  font-weight: 700;
+  width: 14em;
 }
 .main section.vitual .tier_one .container .h3ro p {
   font-size: 1.5em;
@@ -150,128 +156,85 @@ body {
 }
 .main section.vitual .deco-bg {
   position: absolute;
-  top: 0em;
+  top: 11em;
   bottom: 0em;
-  right: 0em;
+  right: 5em;
 }
-.main section.vitual .deco-bg .slant-deco {
-  -webkit-transform: matrix3d(1, 0, 0, 0, -0.57735, 1, 0, 0, 0, 0, 1, 0, -64.7074, 0, 0, 1);
-          transform: matrix3d(1, 0, 0, 0, -0.57735, 1, 0, 0, 0, 0, 1, 0, -64.7074, 0, 0, 1);
-  height: 100vh;
-  width: 28em;
-  background: #f50c4a;
-  position: absolute;
-  top: 0em;
-  right: 9.5em;
-  z-index: 1;
-}
-.main section.vitual .deco-bg .balance {
-  width: 28em;
-  height: 100vh;
-  position: absolute;
-  top: 0em;
-  right: 0em;
-  background: #f50c4a;
-  z-index: 1;
+.main section.vitual .deco-bg img {
+  width: 34em;
 }
 .main section.aboutUs {
   position: relative;
   overflow: hidden;
+  background: white;
 }
 .main section.aboutUs .tier_one .container {
-  padding: 5em 4em 3em;
+  padding: 5em 4em 7em;
 }
 .main section.aboutUs .tier_one .container .story {
-  position: relative;
-  z-index: 3;
+  background: #fff;
+  border: none;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4em 8em 0em;
 }
 .main section.aboutUs .tier_one .container .story h2 {
   font-size: 68px;
-  background-image: url("../img/png/brick.png");
-  -webkit-background-clip: text;
-  background-size: 521px auto;
-  background-clip: text;
-  background-position: 70% center;
-  will-change: background-position;
-  color: transparent;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding-right: 2em;
+  color: #f50c4a;
+  font-weight: 700;
 }
 .main section.aboutUs .tier_one .container .story p.note {
-  padding-right: 1.5em;
   color: rgba(6, 58, 79, 0.6);
   font-size: 14px;
   line-height: 28px;
   margin-bottom: 0em;
   font-weight: 600;
+  text-align: center;
 }
-.main section.aboutUs .tier_one .container .story .row .col-lg-12 .card {
+.main section.aboutUs .tier_one .container .story .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: auto;
+  margin: 3em 0em 2em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main section.aboutUs .tier_one .container .story .wrap .card {
   border: none;
   background: none;
   margin-bottom: 2em;
   border-radius: 0em;
   padding: 1em 2em 0em;
 }
-.main section.aboutUs .tier_one .container .story .row .col-lg-12 .card h3 {
+.main section.aboutUs .tier_one .container .story .wrap .card h3 {
   font-weight: 500;
-  color: #ffff;
+  color: rgba(6, 58, 79, 0.6);
   font-size: 26px;
   font-weight: 600;
 }
-.main section.aboutUs .tier_one .container .story .row .col-lg-12 .card p {
-  color: #ffff;
+.main section.aboutUs .tier_one .container .story .wrap .card p {
+  color: rgba(6, 58, 79, 0.6);
   font-size: 13px;
   line-height: 185%;
-  padding-right: 2em;
-}
-.main section.aboutUs .tier_one .container .story .row .col-lg-12:nth-child(1) .card {
-  border-left: 3px dashed #fff;
-  border-radius: 11px 0px 0px 11px;
-}
-.main section.aboutUs .tier_one .container .story .row .col-lg-12:nth-child(2) .card {
-  border-right: 3px dashed #fff;
-  border-radius: 0px 11px 11px 0px;
-}
-.main section.aboutUs .deco-bg {
-  position: absolute;
-  top: 0em;
-  bottom: 0em;
-  right: 0em;
-}
-.main section.aboutUs .deco-bg .slant-deco {
-  -webkit-transform: matrix3d(1, 0, 0, 0, 0.57735, 1, 0, 0, 0, 0, 1, 0, -64.7074, 0, 0, 1);
-          transform: matrix3d(1, 0, 0, 0, 0.57735, 1, 0, 0, 0, 0, 1, 0, -64.7074, 0, 0, 1);
-  height: 100vh;
-  width: 28em;
-  background: #f50c4a;
-  position: absolute;
-  top: 0em;
-  right: 9.5em;
-  z-index: 1;
-}
-.main section.aboutUs .deco-bg .balance {
-  width: 28em;
-  height: 100vh;
-  position: absolute;
-  top: 0em;
-  right: 0em;
-  background: #f50c4a;
-  z-index: 1;
-}
-.main section.aboutUs .deco-bg .balance .bind-ball {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background: rgba(245, 12, 74, 0.6);
-  border-radius: 1px solid rgba(6, 58, 79, 0.4);
-  bottom: 0em;
 }
 .main section.services {
   position: relative;
-  background: #f50c4a;
+  background: rgba(252, 228, 236, 0.22);
   overflow: hidden;
   z-index: 3;
 }
@@ -284,26 +247,20 @@ body {
 }
 .main section.services .tier_one .container .story h2 {
   font-size: 68px;
-  background-image: url("../img/png/mountain.png");
-  -webkit-background-clip: text;
-  background-size: 521px auto;
-  background-clip: text;
-  background-position: 70% center;
-  will-change: background-position;
-  color: transparent;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding-right: 2em;
+  color: #063a4f;
+  font-weight: 700;
 }
 .main section.services .tier_one .container .story p.note {
   padding-right: 1.5em;
-  color: #ffff;
+  color: #063a4f;
   font-size: 14px;
   line-height: 28px;
   font-weight: 600;
 }
-.main section.services .tier_one .container .story .row .col-lg-6 .card {
+.main section.services .tier_one .container .story .wrap {
+  margin-top: 5em;
+}
+.main section.services .tier_one .container .story .wrap .row .col-lg-4 .card {
   padding: 1.2em;
   border: none;
   display: -webkit-box;
@@ -319,8 +276,9 @@ body {
   border-radius: 10px;
   box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
   margin-bottom: 2em;
+  height: 400px;
 }
-.main section.services .tier_one .container .story .row .col-lg-6 .card .icon {
+.main section.services .tier_one .container .story .wrap .row .col-lg-4 .card .icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,92 +286,47 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
-.main section.services .tier_one .container .story .row .col-lg-6 .card .icon img {
+.main section.services .tier_one .container .story .wrap .row .col-lg-4 .card .icon img {
   width: 50px;
 }
-.main section.services .tier_one .container .story .row .col-lg-6 .card h4 {
+.main section.services .tier_one .container .story .wrap .row .col-lg-4 .card h4 {
   font-weight: 500;
-  color: #063a4f;
+  color: #f50c4a;
   font-size: 15px;
   margin-top: 1.5em;
+  font-weight: 700;
 }
-.main section.services .tier_one .container .story .row .col-lg-6 .card p {
+.main section.services .tier_one .container .story .wrap .row .col-lg-4 .card p {
   color: rgba(6, 58, 79, 0.4);
   font-size: 13px;
   line-height: 185%;
   font-weight: 600;
 }
-.main section.services .tier_one .container .story .row .col-lg-6 .card:hover {
+.main section.services .tier_one .container .story .wrap .row .col-lg-4 .card:hover {
   background: #b2e9ff;
   box-shadow: 0 16px 14px rgba(0, 0, 0, 0.1);
 }
-.main section.services .tier_one .container .story .row .col-lg-6 .card:hover .icon img {
+.main section.services .tier_one .container .story .wrap .row .col-lg-4 .card:hover .icon img {
   -webkit-filter: saturate(0);
           filter: saturate(0);
 }
-.main section.services .tier_one .container .story .row .col-lg-6 .card:hover h4 {
+.main section.services .tier_one .container .story .wrap .row .col-lg-4 .card:hover h4 {
   color: #063a4f;
 }
-.main section.services .tier_one .container .story .row .col-lg-6 .card:hover p {
+.main section.services .tier_one .container .story .wrap .row .col-lg-4 .card:hover p {
   color: #000;
-}
-.main section.services .tier_one .container .story .row .col-lg-6:nth-child(3) {
-  margin-top: -1.5em;
-}
-.main section.services .tier_one .container .story .row .col-lg-6:nth-child(5) {
-  margin-top: -6em;
-}
-.main section.services .tier_one .container .story .row .col-lg-6:nth-child(7) {
-  margin-top: -12em;
-}
-.main section.services .deco-bg {
-  position: absolute;
-  top: 0em;
-  bottom: 0em;
-  right: 0em;
-}
-.main section.services .deco-bg .slant-deco {
-  -webkit-transform: matrix3d(1, 0, 0, 0, -0.57735, 1, 0, 0, 0, 0, 1, 0, -64.7074, 0, 0, 1);
-          transform: matrix3d(1, 0, 0, 0, -0.57735, 1, 0, 0, 0, 0, 1, 0, -64.7074, 0, 0, 1);
-  height: 100%;
-  width: 23em;
-  background: #ffff;
-  position: absolute;
-  top: 0em;
-  right: 10em;
-  z-index: 1;
-}
-.main section.services .deco-bg .balance {
-  width: 14em;
-  height: 100%;
-  position: absolute;
-  top: 0em;
-  right: 0em;
-  background: transparent;
-  z-index: 1;
 }
 .main section.works {
   position: relative;
   overflow: hidden;
-  background: rgba(135, 206, 250, 0.05);
 }
 .main section.works .tier_one .container {
   padding: 5em 4em 8em;
 }
 .main section.works .tier_one .container .story h2 {
   font-size: 68px;
-  background-image: url("../img/png/brick.png");
-  -webkit-background-clip: text;
-  background-size: 521px auto;
-  background-clip: text;
-  background-position: 70% center;
-  will-change: background-position;
-  color: transparent;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding-right: 8em;
-  text-align: left;
+  color: #063a4f;
+  font-weight: 700;
 }
 .main section.works .tier_one .container .story p.note {
   color: rgba(6, 58, 79, 0.6);
@@ -423,29 +336,9 @@ body {
   font-weight: 600;
 }
 .main section.works .tier_one .container .story .wrap {
-  padding: 2em 0em;
-  margin: 2em 0em;
-  background-image: url("../img/png/mountain.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 10px;
-  height: 200px;
+  margin-top: 4em;
 }
-.main section.works .tier_one .container .story .wrap .row {
-  display: -webkit-box;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  margin-left: -8em;
-  margin-right: -8.3em;
-  padding: 0 11em;
-  position: relative;
-  margin-top: 5em;
-}
-.main section.works .tier_one .container .story .wrap .row .col-lg-6 {
-  margin: 1em 0em;
-}
-.main section.works .tier_one .container .story .wrap .row .col-lg-6 .card {
+.main section.works .tier_one .container .story .wrap .row .col-lg-4 .card {
   padding: 1.2em;
   border: none;
   display: -webkit-box;
@@ -463,31 +356,31 @@ body {
   margin-bottom: 2em;
   -webkit-transition: background 0.2s;
           transition: background 0.2s;
+  height: 200px;
 }
-.main section.works .tier_one .container .story .wrap .row .col-lg-6 .card h3 {
+.main section.works .tier_one .container .story .wrap .row .col-lg-4 .card h3 {
   font-weight: 500;
   color: #063a4f;
   font-size: 20px;
-  margin-top: 1.5em;
 }
-.main section.works .tier_one .container .story .wrap .row .col-lg-6 .card p {
+.main section.works .tier_one .container .story .wrap .row .col-lg-4 .card p {
   color: #f50c4a;
   font-size: 12px;
   line-height: 185%;
   font-weight: 600;
 }
-.main section.works .tier_one .container .story .wrap .row .col-lg-6 .card:hover {
+.main section.works .tier_one .container .story .wrap .row .col-lg-4 .card:hover {
   background: #b2e9ff;
   box-shadow: 0 16px 14px rgba(0, 0, 0, 0.1);
 }
-.main section.works .tier_one .container .story .wrap .row .col-lg-6 .card:hover .icon img {
+.main section.works .tier_one .container .story .wrap .row .col-lg-4 .card:hover .icon img {
   -webkit-filter: saturate(0);
           filter: saturate(0);
 }
-.main section.works .tier_one .container .story .wrap .row .col-lg-6 .card:hover h4 {
+.main section.works .tier_one .container .story .wrap .row .col-lg-4 .card:hover h4 {
   color: #063a4f;
 }
-.main section.works .tier_one .container .story .wrap .row .col-lg-6 .card:hover p {
+.main section.works .tier_one .container .story .wrap .row .col-lg-4 .card:hover p {
   color: #000;
 }
 .main section.footer .tier_one .container {
@@ -571,8 +464,9 @@ body {
     padding: 2em 2em;
   }
   .main section.vitual .tier_one .container .h3ro h1 {
-    font-size: 36px;
+    font-size: 2.5em;
     padding-right: 0em;
+    width: auto;
   }
   .main section.vitual .tier_one .container .h3ro p {
     font-size: 1.2em;
@@ -580,89 +474,44 @@ body {
   .main section.vitual .deco-bg {
     display: none;
   }
-  .main section.aboutUs {
-    position: relative;
-  }
   .main section.aboutUs .tier_one .container {
-    padding: 8em 2em 3em;
+    padding: 5em 2em 7em;
   }
   .main section.aboutUs .tier_one .container .story {
-    width: 100%;
+    padding: 4em 2em 0em;
   }
   .main section.aboutUs .tier_one .container .story h2 {
-    padding-right: 0em;
+    font-size: 47px;
   }
-  .main section.aboutUs .tier_one .container .story p {
-    padding-right: 0em;
+  .main section.aboutUs .tier_one .container .story p.note {
+    text-align: left;
   }
-  .main section.aboutUs .tier_one .container .story .row {
-    margin-top: 6em;
-  }
-  .main section.aboutUs .tier_one .container .story .row .col-lg-12 .card h3 {
-    color: rgba(6, 58, 79, 0.6);
-  }
-  .main section.aboutUs .tier_one .container .story .row .col-lg-12 .card p {
-    color: rgba(6, 58, 79, 0.6);
-  }
-  .main section.aboutUs .tier_one .container .story .row .col-lg-12:nth-child(1) .card {
-    border-left: 3px dashed rgba(6, 58, 79, 0.4);
-  }
-  .main section.aboutUs .tier_one .container .story .row .col-lg-12:nth-child(2) .card {
-    border-right: 3px dashed rgba(6, 58, 79, 0.4);
-  }
-  .main section.aboutUs .deco-bg {
-    display: none;
-  }
-  .main section.services {
-    position: relative;
-    background: #f50c4a;
-    overflow: hidden;
-    z-index: 3;
+  .main section.aboutUs .tier_one .container .story .wrap .card {
+    padding: 1em 0em 0em;
   }
   .main section.services .tier_one .container {
     padding: 8em 2em;
   }
-  .main section.services .tier_one .container .story {
-    position: relative;
-    z-index: 3;
-  }
   .main section.services .tier_one .container .story h2 {
-    padding-right: 0em;
+    font-size: 57px;
   }
   .main section.services .tier_one .container .story p.note {
-    padding-right: 0em;
-    margin-bottom: 8em;
+    margin-bottom: 10em;
   }
-  .main section.services .tier_one .container .story .row .col-lg-6:nth-child(3) {
-    margin-top: 0em;
+  .main section.services .tier_one .container .story .wrap .row .col-lg-4 {
+    margin-bottom: 2em;
   }
-  .main section.services .tier_one .container .story .row .col-lg-6:nth-child(5) {
-    margin-top: 0em;
-  }
-  .main section.services .tier_one .container .story .row .col-lg-6:nth-child(7) {
-    margin-top: 0em;
-  }
-  .main section.services .deco-bg .slant-deco {
-    right: 2em;
+  .main section.services .tier_one .container .story .wrap .row .col-lg-4 .card {
+    height: 100%;
   }
   .main section.works .tier_one .container {
     padding: 8em 2em 13em;
   }
-  .main section.works .tier_one .container .story {
-    position: relative;
-    z-index: 3;
-  }
   .main section.works .tier_one .container .story h2 {
-    padding-right: 0em;
-    font-size: 46px;
+    font-size: 57px;
   }
-  .main section.works .tier_one .container .story .wrap .row {
-    padding: 0em 6em;
-    margin-left: -5em;
-    margin-right: -1.9em;
-  }
-  .main section.works .tier_one .container .story .wrap .row .col-lg-6 .card {
-    height: 216px;
+  .main section.works .tier_one .container .story .wrap .row .col-lg-4 .card {
+    height: auto;
   }
   .main section.footer .tier_two .container .row .col-lg-2 .brand-logo {
     height: 133px;
@@ -670,45 +519,39 @@ body {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .main section.vitual .tier_one .container .h3ro h1 {
-    padding-right: 3em;
+    font-size: 3.4em;
   }
-  .main section.vitual .deco-bg .balance {
-    width: 7em;
+  .main section.vitual .deco-bg {
+    right: 0em;
   }
-  .main section.vitual .deco-bg .slant-deco {
-    right: -12.5em;
+  .main section.vitual .deco-bg img {
+    width: 26em;
   }
-  .main section.aboutUs .tier_one .container .story .row {
-    margin-top: 6em;
+  .main section.aboutUs .tier_one .container .story {
+    padding: 4em 3em 0em;
   }
-  .main section.aboutUs .tier_one .container .story .row .col-lg-12 .card h3 {
-    color: rgba(6, 58, 79, 0.6);
+  .main section.aboutUs .tier_one .container .story h2 {
+    font-size: 57px;
   }
-  .main section.aboutUs .tier_one .container .story .row .col-lg-12 .card p {
-    color: rgba(6, 58, 79, 0.6);
-  }
-  .main section.aboutUs .tier_one .container .story .row .col-lg-12:nth-child(1) .card {
-    border-left: 3px dashed rgba(6, 58, 79, 0.4);
-  }
-  .main section.aboutUs .tier_one .container .story .row .col-lg-12:nth-child(2) .card {
-    border-right: 3px dashed rgba(6, 58, 79, 0.4);
-  }
-  .main section.aboutUs .deco-bg .balance {
-    width: 7em;
-  }
-  .main section.aboutUs .deco-bg .slant-deco {
-    right: -12.5em;
+  .main section.services .tier_one .container .story h2 {
+    font-size: 57px;
   }
   .main section.services .tier_one .container .story p.note {
     margin-bottom: 10em;
   }
-  .main section.services .tier_one .container .story .row .col-lg-6:nth-child(3) {
-    margin-top: 0em;
+  .main section.services .tier_one .container .story .wrap .row .col-lg-4 {
+    margin-bottom: 2em;
   }
-  .main section.services .tier_one .container .story .row .col-lg-6:nth-child(5) {
-    margin-top: 0em;
+  .main section.services .tier_one .container .story .wrap .row .col-lg-4 .card {
+    height: 100%;
   }
-  .main section.services .tier_one .container .story .row .col-lg-6:nth-child(7) {
-    margin-top: 0em;
+  .main section.works .tier_one .container .story h2 {
+    font-size: 57px;
+  }
+  .main section.works .tier_one .container .story .wrap .row .col-lg-4 .card {
+    height: auto;
+  }
+  .main section.footer .tier_one .container {
+    padding: 4em 2em 7em;
   }
 }
