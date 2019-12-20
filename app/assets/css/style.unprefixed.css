@@ -73,6 +73,19 @@ body {
 .home header .container nav ul li span:hover i.fab {
   color: #ffff;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home header .container nav ul li span {
+    background: #eeeeee;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .home header .container {
+    padding: 4em 2em;
+  }
+  .home header .container nav {
+    display: none;
+  }
+}
 
 .main section.vitual {
   width: 100%;
@@ -134,6 +147,8 @@ body {
 }
 .main section.aboutUs .tier_one .container .story {
   width: 500px;
+  position: relative;
+  z-index: 3;
 }
 .main section.aboutUs .tier_one .container .story h2 {
   font-size: 68px;
@@ -153,6 +168,7 @@ body {
   font-size: 14px;
   line-height: 28px;
   margin-bottom: 0em;
+  font-weight: 600;
 }
 .main section.aboutUs .deco-bg {
   position: absolute;
@@ -218,6 +234,7 @@ body {
   color: #ffff;
   font-size: 14px;
   line-height: 28px;
+  font-weight: 600;
 }
 .main section.services .tier_one .container .story .row .col-lg-6 .card {
   padding: 1.2em;
@@ -246,6 +263,7 @@ body {
   color: rgba(6, 58, 79, 0.4);
   font-size: 13px;
   line-height: 185%;
+  font-weight: 600;
 }
 .main section.services .tier_one .container .story .row .col-lg-6 .card:hover {
   background: #b2e9ff;
@@ -287,6 +305,90 @@ body {
   right: 0em;
   background: transparent;
   z-index: 1;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .main section.vitual {
+    height: 100%;
+  }
+  .main section.vitual .tier_one .container {
+    padding: 2em 2em;
+  }
+  .main section.vitual .tier_one .container .h3ro h1 {
+    font-size: 36px;
+    padding-right: 0em;
+  }
+  .main section.vitual .tier_one .container .h3ro p {
+    font-size: 1.2em;
+  }
+  .main section.vitual .deco-bg {
+    display: none;
+  }
+  .main section.aboutUs {
+    position: relative;
+  }
+  .main section.aboutUs .tier_one .container {
+    padding: 8em 2em 3em;
+  }
+  .main section.aboutUs .tier_one .container .story {
+    width: 100%;
+  }
+  .main section.aboutUs .tier_one .container .story h2 {
+    padding-right: 0em;
+  }
+  .main section.aboutUs .tier_one .container .story p {
+    padding-right: 0em;
+  }
+  .main section.aboutUs .deco-bg {
+    display: none;
+  }
+  .main section.services {
+    position: relative;
+    background: #f50c4a;
+    overflow: hidden;
+    z-index: 3;
+  }
+  .main section.services .tier_one .container {
+    padding: 8em 2em;
+  }
+  .main section.services .tier_one .container .story {
+    position: relative;
+    z-index: 3;
+  }
+  .main section.services .tier_one .container .story h2 {
+    padding-right: 0em;
+  }
+  .main section.services .tier_one .container .story p.note {
+    padding-right: 0em;
+  }
+  .main section.services .tier_one .container .story .row .col-lg-6:nth-child(5) {
+    margin-top: 0em;
+  }
+  .main section.services .deco-bg .slant-deco {
+    right: 2em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .main section.vitual .tier_one .container .h3ro h1 {
+    padding-right: 3em;
+  }
+  .main section.vitual .deco-bg .balance {
+    width: 7em;
+  }
+  .main section.vitual .deco-bg .slant-deco {
+    right: -12.5em;
+  }
+  .main section.aboutUs .deco-bg .balance {
+    width: 7em;
+  }
+  .main section.aboutUs .deco-bg .slant-deco {
+    right: -12.5em;
+  }
+  .main section.services .tier_one .container .story p.note {
+    color: #000;
+  }
+  .main section.services .tier_one .container .story .row .col-lg-6:nth-child(5) {
+    margin-top: 0em;
+  }
 }
 
 /*# sourceMappingURL=style.unprefixed.css.map */

@@ -75,6 +75,8 @@
         padding: 8em 4em 3em;
         .story {
           width: 500px;
+          position: relative;
+          z-index: 3;
           h2 {
             font-size: 68px;
             background-image: url("../img/png/brick.png");
@@ -93,6 +95,7 @@
             font-size: 14px;
             line-height: 28px;
             margin-bottom: 0em;
+            font-weight: 600;
           }
         }
       }
@@ -177,6 +180,7 @@
             color: $white;
             font-size: 14px;
             line-height: 28px;
+            font-weight: 600;
           }
           .row .col-lg-6 {
             .card {
@@ -205,6 +209,7 @@
                 color: rgba($blue, 0.4);
                 font-size: 13px;
                 line-height: 185%;
+                font-weight: 600;
               }
               &:hover {
                 background: #b2e9ff;
@@ -269,6 +274,110 @@
         right: 0em;
         background: transparent;
         z-index: 1;
+      }
+    }
+  }
+  @media only screen and (min-width: 320px) and (max-width: 767px) {
+    section.vitual {
+      height: 100%;
+      .tier_one .container {
+        padding: 2em 2em;
+        .h3ro {
+          h1 {
+            font-size: 36px;
+            padding-right: 0em;
+          }
+          p {
+            font-size: 1.2em;
+          }
+        }
+      }
+      .deco-bg {
+        display: none;
+      }
+    }
+    section.aboutUs {
+      position: relative;
+      .tier_one {
+        .container {
+          padding: 8em 2em 3em;
+          .story {
+            width: 100%;
+            h2 {
+              padding-right: 0em;
+            }
+            p {
+              padding-right: 0em;
+            }
+          }
+        }
+      }
+      .deco-bg {
+        display: none;
+      }
+    }
+    section.services {
+      position: relative;
+      background: $pink;
+      overflow: hidden;
+      z-index: 3;
+      .tier_one {
+        .container {
+          padding: 8em 2em;
+          .story {
+            position: relative;
+            z-index: 3;
+            h2 {
+              padding-right: 0em;
+            }
+            p.note {
+              padding-right: 0em;
+            }
+            .row .col-lg-6:nth-child(5) {
+              margin-top: 0em;
+            }
+          }
+        }
+      }
+      .deco-bg {
+        .slant-deco {
+          right: 2em;
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    section.vitual {
+      .tier_one .container .h3ro h1 {
+        padding-right: 3em;
+      }
+      .deco-bg {
+        .balance {
+          width: 7em;
+        }
+        .slant-deco {
+          right: -12.5em;
+        }
+      }
+    }
+    section.aboutUs {
+      .deco-bg {
+        .balance {
+          width: 7em;
+        }
+        .slant-deco {
+          right: -12.5em;
+        }
+      }
+    }
+    section.services {
+      .tier_one .container .story {
+        p.note {
+          color: #000;
+        }
+        .row .col-lg-6:nth-child(5) {
+          margin-top: 0em;
+        }
       }
     }
   }

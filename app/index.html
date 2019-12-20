@@ -26,6 +26,7 @@
     />
     <link rel="stylesheet" href="assets/components/animate/animate.css" />
     <link rel="stylesheet" href="assets/css/style.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body class="home">
@@ -68,8 +69,12 @@
         <div class="tier_one">
           <div class="container">
             <div class="h3ro">
-              <h1>MOVING BUSINESSES TO THE NEXT LEVEL</h1>
-              <p>Innovative Solutions Delivered</p>
+              <h1 data-aos="fade-up" data-aos-delay="200">
+                MOVING BUSINESSES TO THE NEXT LEVEL
+              </h1>
+              <p data-aos="fade-up" data-aos-delay="500">
+                Innovative Solutions Delivered
+              </p>
             </div>
           </div>
         </div>
@@ -82,28 +87,30 @@
         <div class="tier_one">
           <div class="container">
             <div class="story">
-              <h2>
+              <h2 data-aos="fade-up" data-aos-delay="200">
                 WHO <br />
                 WE ARE
               </h2>
-              <p>
-                Softkodaz Solutions is an Information Technology Company which
-                specializes in delivering innovative solutions to the African
-                Business Market and the World at large. The company started
-                operation fully in the year 2017 with the vision to develop and
-                deploy thought provoking solutions to enhance and drive ROI for
-                most businesses with a very strong focus on the SMEs. Our goal
-                is to exceed the expectations of every client by offering
-                top-notch solutions that will drive Product & Service
-                Innovations, Operational Excellence & Efﬁciency, Customer
-                Experience and Business Proﬁtability.
-              </p>
-              <p>
-                Our collective teams of highly qualiﬁed technology experts and
-                business professionals have given us the edge in helping you
-                move your business to the next level. Our solutions are without
-                any hiccups.
-              </p>
+              <div data-aos="fade-up" data-aos-delay="200">
+                <p>
+                  Softkodaz Solutions is an Information Technology Company which
+                  specializes in delivering innovative solutions to the African
+                  Business Market and the World at large. The company started
+                  operation fully in the year 2017 with the vision to develop
+                  and deploy thought provoking solutions to enhance and drive
+                  ROI for most businesses with a very strong focus on the SMEs.
+                  Our goal is to exceed the expectations of every client by
+                  offering top-notch solutions that will drive Product & Service
+                  Innovations, Operational Excellence & Efﬁciency, Customer
+                  Experience and Business Proﬁtability.
+                </p>
+                <p>
+                  Our collective teams of highly qualiﬁed technology experts and
+                  business professionals have given us the edge in helping you
+                  move your business to the next level. Our solutions are
+                  without any hiccups.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -118,20 +125,22 @@
             <div class="story">
               <div class="row">
                 <div class="col-lg-6">
-                  <h2>
+                  <h2 data-aos="fade-up" data-aos-delay="200">
                     WHAT <br />
                     WE DO
                   </h2>
-                  <p class="note">
-                    At Softkodaz, we develop hi-tech business solutions and
-                    offer expert advice on emerging technologies for business
-                    performance. Our services cut across UI/UX Design, Web
-                    Design, Web Programming, Mobile Development, Payment
-                    Integration, Business Intelligence, Data Analytics, and Code
-                    Academy. We are currently positioned to become one of the
-                    leading providers of revolutionary solutions by the year
-                    2020.
-                  </p>
+                  <div data-aos="fade-up" data-aos-delay="200">
+                    <p class="note">
+                      At Softkodaz, we develop hi-tech business solutions and
+                      offer expert advice on emerging technologies for business
+                      performance. Our services cut across UI/UX Design, Web
+                      Design, Web Programming, Mobile Development, Payment
+                      Integration, Business Intelligence, Data Analytics, and
+                      Code Academy. We are currently positioned to become one of
+                      the leading providers of revolutionary solutions by the
+                      year 2020.
+                    </p>
+                  </div>
                 </div>
                 <div class="col-lg-6">
                   <div class="row">
@@ -244,5 +253,16 @@
     <script src="assets/components/bootstrap/bootstrap.min.js"></script>
     <script src="assets/js/scripts.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      $(document).ready(function() {
+        //AOS Initialization
+        $(function() {
+          AOS.init({
+            once: true,
+            mirror: false
+          });
+        });
+      });
+    </script>
   </body>
 </html>
