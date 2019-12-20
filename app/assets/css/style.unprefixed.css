@@ -398,9 +398,8 @@ body p {
     padding: 2em 2em;
   }
   .main section.vitual .tier_one .container .h3ro h1 {
-    font-size: 2.5em;
-    padding-right: 0em;
-    width: auto;
+    font-size: 37px;
+    line-height: 97.52%;
   }
   .main section.vitual .tier_one .container .h3ro p {
     font-size: 1.2em;
@@ -415,7 +414,7 @@ body p {
     padding: 4em 2em 0em;
   }
   .main section.aboutUs .tier_one .container .story h2 {
-    font-size: 47px;
+    font-size: 43px;
   }
   .main section.aboutUs .tier_one .container .story p.note {
     text-align: left;
@@ -427,7 +426,7 @@ body p {
     padding: 8em 2em;
   }
   .main section.services .tier_one .container .story h2 {
-    font-size: 57px;
+    font-size: 43px;
   }
   .main section.services .tier_one .container .story p.note {
     margin-bottom: 10em;
