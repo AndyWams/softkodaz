@@ -340,6 +340,7 @@
             }
             p.note {
               padding-right: 0em;
+              margin-bottom: 8em;
             }
             .row .col-lg-6 {
               &:nth-child(3) {
@@ -388,6 +389,9 @@
     }
     section.services {
       .tier_one .container .story {
+        p.note {
+          margin-bottom: 10em;
+        }
         .row .col-lg-6 {
           &:nth-child(3) {
             margin-top: 0em;
