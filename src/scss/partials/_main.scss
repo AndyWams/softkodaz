@@ -227,8 +227,11 @@
                 }
               }
             }
+            &:nth-child(3) {
+              margin-top: -1.5em;
+            }
             &:nth-child(5) {
-              margin-top: -4.5em;
+              margin-top: -6em;
             }
           }
         }
@@ -333,6 +336,10 @@
             p.note {
               padding-right: 0em;
             }
+
+            .row .col-lg-6:nth-child(3) {
+              margin-top: 0em;
+            }
             .row .col-lg-6:nth-child(5) {
               margin-top: 0em;
             }
@@ -374,6 +381,9 @@
       .tier_one .container .story {
         p.note {
           color: #000;
+        }
+        .row .col-lg-6:nth-child(3) {
+          margin-top: 0em;
         }
         .row .col-lg-6:nth-child(5) {
           margin-top: 0em;

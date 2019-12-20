@@ -278,8 +278,11 @@ body {
 .main section.services .tier_one .container .story .row .col-lg-6 .card:hover p {
   color: #000;
 }
+.main section.services .tier_one .container .story .row .col-lg-6:nth-child(3) {
+  margin-top: -1.5em;
+}
 .main section.services .tier_one .container .story .row .col-lg-6:nth-child(5) {
-  margin-top: -4.5em;
+  margin-top: -6em;
 }
 .main section.services .deco-bg {
   position: absolute;
@@ -360,6 +363,9 @@ body {
   .main section.services .tier_one .container .story p.note {
     padding-right: 0em;
   }
+  .main section.services .tier_one .container .story .row .col-lg-6:nth-child(3) {
+    margin-top: 0em;
+  }
   .main section.services .tier_one .container .story .row .col-lg-6:nth-child(5) {
     margin-top: 0em;
   }
@@ -385,6 +391,9 @@ body {
   }
   .main section.services .tier_one .container .story p.note {
     color: #000;
+  }
+  .main section.services .tier_one .container .story .row .col-lg-6:nth-child(3) {
+    margin-top: 0em;
   }
   .main section.services .tier_one .container .story .row .col-lg-6:nth-child(5) {
     margin-top: 0em;
