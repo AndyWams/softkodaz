@@ -80,7 +80,7 @@ body {
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .home header .container {
-    padding: 4em 2em;
+    padding: 2em;
   }
   .home header .container nav {
     display: none;
@@ -92,6 +92,7 @@ body {
   height: 100vh;
   display: flex;
   position: relative;
+  overflow: hidden;
 }
 .main section.vitual .tier_one {
   margin: 8em 0em 0em;
@@ -141,6 +142,7 @@ body {
 }
 .main section.aboutUs {
   position: relative;
+  overflow: hidden;
 }
 .main section.aboutUs .tier_one .container {
   padding: 8em 4em 3em;
@@ -284,6 +286,9 @@ body {
 .main section.services .tier_one .container .story .row .col-lg-6:nth-child(5) {
   margin-top: -6em;
 }
+.main section.services .tier_one .container .story .row .col-lg-6:nth-child(7) {
+  margin-top: -12em;
+}
 .main section.services .deco-bg {
   position: absolute;
   top: 0em;
@@ -369,6 +374,9 @@ body {
   .main section.services .tier_one .container .story .row .col-lg-6:nth-child(5) {
     margin-top: 0em;
   }
+  .main section.services .tier_one .container .story .row .col-lg-6:nth-child(7) {
+    margin-top: 0em;
+  }
   .main section.services .deco-bg .slant-deco {
     right: 2em;
   }
@@ -389,13 +397,13 @@ body {
   .main section.aboutUs .deco-bg .slant-deco {
     right: -12.5em;
   }
-  .main section.services .tier_one .container .story p.note {
-    color: #000;
-  }
   .main section.services .tier_one .container .story .row .col-lg-6:nth-child(3) {
     margin-top: 0em;
   }
   .main section.services .tier_one .container .story .row .col-lg-6:nth-child(5) {
+    margin-top: 0em;
+  }
+  .main section.services .tier_one .container .story .row .col-lg-6:nth-child(7) {
     margin-top: 0em;
   }
 }

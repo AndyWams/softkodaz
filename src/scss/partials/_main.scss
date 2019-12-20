@@ -4,6 +4,7 @@
     height: 100vh;
     display: flex;
     position: relative;
+    overflow: hidden;
     .tier_one {
       margin: 8em 0em 0em;
       width: 100%;
@@ -70,6 +71,7 @@
   }
   section.aboutUs {
     position: relative;
+    overflow: hidden;
     .tier_one {
       .container {
         padding: 8em 4em 3em;
@@ -233,6 +235,9 @@
             &:nth-child(5) {
               margin-top: -6em;
             }
+            &:nth-child(7) {
+              margin-top: -12em;
+            }
           }
         }
       }
@@ -336,12 +341,16 @@
             p.note {
               padding-right: 0em;
             }
-
-            .row .col-lg-6:nth-child(3) {
-              margin-top: 0em;
-            }
-            .row .col-lg-6:nth-child(5) {
-              margin-top: 0em;
+            .row .col-lg-6 {
+              &:nth-child(3) {
+                margin-top: 0em;
+              }
+              &:nth-child(5) {
+                margin-top: 0em;
+              }
+              &:nth-child(7) {
+                margin-top: 0em;
+              }
             }
           }
         }
@@ -379,14 +388,16 @@
     }
     section.services {
       .tier_one .container .story {
-        p.note {
-          color: #000;
-        }
-        .row .col-lg-6:nth-child(3) {
-          margin-top: 0em;
-        }
-        .row .col-lg-6:nth-child(5) {
-          margin-top: 0em;
+        .row .col-lg-6 {
+          &:nth-child(3) {
+            margin-top: 0em;
+          }
+          &:nth-child(5) {
+            margin-top: 0em;
+          }
+          &:nth-child(7) {
+            margin-top: 0em;
+          }
         }
       }
     }
