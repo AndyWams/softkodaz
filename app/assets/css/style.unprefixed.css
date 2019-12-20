@@ -534,6 +534,21 @@ body {
   .main section.aboutUs .tier_one .container .story p {
     padding-right: 0em;
   }
+  .main section.aboutUs .tier_one .container .story .row {
+    margin-top: 6em;
+  }
+  .main section.aboutUs .tier_one .container .story .row .col-lg-12 .card h3 {
+    color: rgba(6, 58, 79, 0.6);
+  }
+  .main section.aboutUs .tier_one .container .story .row .col-lg-12 .card p {
+    color: rgba(6, 58, 79, 0.6);
+  }
+  .main section.aboutUs .tier_one .container .story .row .col-lg-12:nth-child(1) .card {
+    border-left: 3px dashed rgba(6, 58, 79, 0.4);
+  }
+  .main section.aboutUs .tier_one .container .story .row .col-lg-12:nth-child(2) .card {
+    border-right: 3px dashed rgba(6, 58, 79, 0.4);
+  }
   .main section.aboutUs .deco-bg {
     display: none;
   }
@@ -601,6 +616,21 @@ body {
   }
   .main section.vitual .deco-bg .slant-deco {
     right: -12.5em;
+  }
+  .main section.aboutUs .tier_one .container .story .row {
+    margin-top: 6em;
+  }
+  .main section.aboutUs .tier_one .container .story .row .col-lg-12 .card h3 {
+    color: rgba(6, 58, 79, 0.6);
+  }
+  .main section.aboutUs .tier_one .container .story .row .col-lg-12 .card p {
+    color: rgba(6, 58, 79, 0.6);
+  }
+  .main section.aboutUs .tier_one .container .story .row .col-lg-12:nth-child(1) .card {
+    border-left: 3px dashed rgba(6, 58, 79, 0.4);
+  }
+  .main section.aboutUs .tier_one .container .story .row .col-lg-12:nth-child(2) .card {
+    border-right: 3px dashed rgba(6, 58, 79, 0.4);
   }
   .main section.aboutUs .deco-bg .balance {
     width: 7em;

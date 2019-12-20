@@ -522,6 +522,29 @@
             p {
               padding-right: 0em;
             }
+            .row {
+              margin-top: 6em;
+              .col-lg-12 {
+                .card {
+                  h3 {
+                    color: rgba($blue, 0.6);
+                  }
+                  p {
+                    color: rgba($blue, 0.6);
+                  }
+                }
+                &:nth-child(1) {
+                  .card {
+                    border-left: 3px dashed rgba($blue, 0.4);
+                  }
+                }
+                &:nth-child(2) {
+                  .card {
+                    border-right: 3px dashed rgba($blue, 0.4);
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -611,6 +634,29 @@
       }
     }
     section.aboutUs {
+      .tier_one .container .story .row {
+        margin-top: 6em;
+        .col-lg-12 {
+          .card {
+            h3 {
+              color: rgba($blue, 0.6);
+            }
+            p {
+              color: rgba($blue, 0.6);
+            }
+          }
+          &:nth-child(1) {
+            .card {
+              border-left: 3px dashed rgba($blue, 0.4);
+            }
+          }
+          &:nth-child(2) {
+            .card {
+              border-right: 3px dashed rgba($blue, 0.4);
+            }
+          }
+        }
+      }
       .deco-bg {
         .balance {
           width: 7em;
