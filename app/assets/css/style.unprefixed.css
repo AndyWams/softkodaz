@@ -408,10 +408,11 @@ body p {
     display: none;
   }
   .main section.aboutUs .tier_one .container {
-    padding: 5em 2em 7em;
+    padding: 5em 0em 7em;
   }
   .main section.aboutUs .tier_one .container .story {
     padding: 4em 2em 0em;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
   }
   .main section.aboutUs .tier_one .container .story h2 {
     font-size: 43px;
