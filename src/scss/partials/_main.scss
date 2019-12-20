@@ -27,10 +27,10 @@
             padding-right: 6em;
             font-weight: 700;
             width: 14em;
+            margin-bottom: 0.5m;
           }
           p {
             font-size: 1.5em;
-            margin: 0em 8px;
             color: rgba($blue, 0.6);
           }
         }
@@ -66,6 +66,7 @@
             font-size: 68px;
             color: $pink;
             font-weight: 700;
+            margin-bottom: 1em;
           }
           p.note {
             color: rgba($blue, 0.6);
@@ -120,6 +121,7 @@
             font-size: 68px;
             color: #063a4f;
             font-weight: 700;
+            margin-bottom: 1em;
           }
           p.note {
             padding-right: 1.5em;
@@ -194,6 +196,7 @@
             font-size: 68px;
             color: #063a4f;
             font-weight: 700;
+            margin-bottom: 1em;
           }
           p.note {
             color: rgba(6, 58, 79, 0.6);
@@ -361,7 +364,7 @@
     }
     section.services {
       .tier_one .container {
-        padding: 8em 2em;
+        padding: 5em 2em;
         .story {
           h2 {
             font-size: 43px;

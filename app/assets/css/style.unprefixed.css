@@ -125,10 +125,10 @@ body p {
   padding-right: 6em;
   font-weight: 700;
   width: 14em;
+  margin-bottom: 0.5m;
 }
 .main section.vitual .tier_one .container .h3ro p {
   font-size: 1.5em;
-  margin: 0em 8px;
   color: rgba(6, 58, 79, 0.6);
 }
 .main section.vitual .deco-bg {
@@ -161,6 +161,7 @@ body p {
   font-size: 68px;
   color: #f50c4a;
   font-weight: 700;
+  margin-bottom: 1em;
 }
 .main section.aboutUs .tier_one .container .story p.note {
   color: rgba(6, 58, 79, 0.6);
@@ -212,6 +213,7 @@ body p {
   font-size: 68px;
   color: #063a4f;
   font-weight: 700;
+  margin-bottom: 1em;
 }
 .main section.services .tier_one .container .story p.note {
   padding-right: 1.5em;
@@ -278,6 +280,7 @@ body p {
   font-size: 68px;
   color: #063a4f;
   font-weight: 700;
+  margin-bottom: 1em;
 }
 .main section.works .tier_one .container .story p.note {
   color: rgba(6, 58, 79, 0.6);
@@ -424,7 +427,7 @@ body p {
     padding: 1em 0em 0em;
   }
   .main section.services .tier_one .container {
-    padding: 8em 2em;
+    padding: 5em 2em;
   }
   .main section.services .tier_one .container .story h2 {
     font-size: 43px;
