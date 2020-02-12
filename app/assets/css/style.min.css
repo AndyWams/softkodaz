@@ -1,10 +1,568 @@
-/*!
- * softkodaz
- * Softkodaz Solutions is an Information Technology Company which specializes in delivering innovative solutions to the African Business Market and the World at large
- * http://softkodaz.com
- * @author Andrew Wams
- * @version 1.1.0
- * Copyright 2019. MIT licensed.
- */
+.clear:after, .clear:before {
+  content: " ";
+  display: table;
+}
 
-.clear:after,.clear:before{content:" ";display:table}.clear:after{clear:both}body{box-sizing:content-box;text-rendering:geometricPrecision}body h1,body h2,body h3,body h4{font-family:Oxygen,sans-serif}body p{font-family:Roboto,sans-serif}.home header{position:absolute;left:0;right:0;top:0;z-index:50}.home header .container{padding:4em;display:flex;justify-content:space-between;align-items:center}.home header .container a{display:flex;width:fit-content}.home header .container a img{width:8em}.home header .container nav ul{display:flex;justify-content:space-between;list-style:none;padding-left:0;margin-bottom:0}.home header .container nav ul li{margin-right:2em}.home header .container nav ul li span{background-color:#fce4ec;border-radius:50%;text-align:center;width:40px;height:40px;display:flex;align-items:center;justify-content:center;transition:.1s ease-in;cursor:pointer;font-size:12px}.home header .container nav ul li span i.fab{color:#f50c4a}.home header .container nav ul li span a{text-decoration:none;background-color:transparent}.home header .container nav ul li span:hover{background:#f50c4a}.home header .container nav ul li span:hover i.fab{color:#fff}@media only screen and (min-width:768px) and (max-width:991px){.home header .container nav ul li span{background:#eee}}@media only screen and (min-width:320px) and (max-width:767px){.home header .container{padding:2em}.home header .container nav{display:none}}.main ::-webkit-scrollbar{scrollbar-width:none;-ms-overflow-style:none}.main html{overflow:scroll;overflow-x:hidden}.main section.vitual{width:100%;height:100vh;display:flex;position:relative;overflow:hidden}.main section.vitual .tier_one{margin:8em 0 0;width:100%}.main section.vitual .tier_one .container{padding:2em 4em}.main section.vitual .tier_one .container .h3ro{position:relative;z-index:2}.main section.vitual .tier_one .container .h3ro h1{font-size:5.4em;line-height:1.1em;padding-right:6em;font-weight:700;width:14em;margin-bottom:.5m}.main section.vitual .tier_one .container .h3ro p{font-size:1.5em;color:rgba(6,58,79,.6)}.main section.vitual .deco-bg{position:absolute;top:11em;bottom:0;right:5em}.main section.vitual .deco-bg img{width:34em}.main section.aboutUs{position:relative;overflow:hidden;background:#fff}.main section.aboutUs .tier_one .container{padding:5em 4em 7em}.main section.aboutUs .tier_one .container .story{background:#fff;border:none;box-shadow:0 14px 35px rgba(0,0,0,.08);position:relative;z-index:4;display:flex;flex-direction:column;align-items:center;padding:4em 8em 0}.main section.aboutUs .tier_one .container .story h2{font-size:68px;color:#f50c4a;font-weight:700;margin-bottom:1em}.main section.aboutUs .tier_one .container .story p.note{color:rgba(6,58,79,.6);font-size:14px;line-height:28px;margin-bottom:0;font-weight:600;text-align:center}.main section.aboutUs .tier_one .container .story .wrap{display:flex;flex-direction:row;width:auto;margin:3em 0 2em;justify-content:space-between}.main section.aboutUs .tier_one .container .story .wrap .card{border:none;background:0 0;margin-bottom:2em;border-radius:0;padding:1em 2em 0}.main section.aboutUs .tier_one .container .story .wrap .card h3{color:#073b50;font-size:26px;font-weight:600}.main section.aboutUs .tier_one .container .story .wrap .card p{color:rgba(6,58,79,.6);font-size:13px;line-height:185%}.main section.services{position:relative;background:rgba(252,228,236,.22);overflow:hidden;z-index:3;margin-top:-20em}.main section.services .tier_one .container{padding:8em 4em}.main section.services .tier_one .container .story{position:relative;z-index:3;margin-top:14em}.main section.services .tier_one .container .story h2{font-size:68px;color:#063a4f;font-weight:700;margin-bottom:1em}.main section.services .tier_one .container .story p.note{padding-right:1.5em;color:#063a4f;font-size:14px;line-height:28px;font-weight:600}.main section.services .tier_one .container .story .wrap{margin-top:5em}.main section.services .tier_one .container .story .wrap .row .col-lg-4 .card{padding:1.2em;border:none;display:flex;justify-content:center;flex-direction:column;border-radius:10px;box-shadow:0 14px 35px rgba(0,0,0,.08);margin-bottom:2em;height:350px}.main section.services .tier_one .container .story .wrap .row .col-lg-4 .card .icon{display:flex;justify-content:flex-start}.main section.services .tier_one .container .story .wrap .row .col-lg-4 .card .icon img{width:50px;filter:opacity(.4)}.main section.services .tier_one .container .story .wrap .row .col-lg-4 .card:hover .icon img,.main section.works .tier_one .container .story .wrap .row .col-lg-4 .card:hover .icon img{filter:saturate(0)}.main section.services .tier_one .container .story .wrap .row .col-lg-4 .card h4{color:#f50c4a;font-size:15px;margin-top:1.5em;font-weight:700}.main section.services .tier_one .container .story .wrap .row .col-lg-4 .card p{color:rgba(6,58,79,.4);font-size:13px;line-height:185%;font-weight:600}.main section.services .tier_one .container .story .wrap .row .col-lg-4 .card:hover{background:#b2e9ff;box-shadow:0 16px 14px rgba(0,0,0,.1)}.main section.services .tier_one .container .story .wrap .row .col-lg-4 .card:hover h4{color:#063a4f}.main section.services .tier_one .container .story .wrap .row .col-lg-4 .card:hover p{color:#000}.main section.works{position:relative;overflow:hidden}.main section.works .tier_one .container{padding:5em 4em 8em}.main section.works .tier_one .container .story h2{font-size:68px;color:#f50c4a;font-weight:700;margin-bottom:1em}.main section.works .tier_one .container .story p.note{color:rgba(6,58,79,.6);font-size:14px;line-height:28px;margin-bottom:0;font-weight:600}.main section.works .tier_one .container .story .wrap{margin-top:4em}.main section.works .tier_one .container .story .wrap .row .col-lg-4 .card{padding:1.2em;border:none;display:flex;justify-content:center;flex-direction:column;border-radius:10px;box-shadow:0 3px 20px 0 rgba(0,0,0,.08);margin-bottom:2em;transition:background .2s;height:200px}.main section.works .tier_one .container .story .wrap .row .col-lg-4 .card h3{color:#f50c4a;font-size:20px;font-weight:700}.main section.works .tier_one .container .story .wrap .row .col-lg-4 .card p{color:rgba(6,58,79,.4);font-size:12px;line-height:185%;font-weight:600}.main section.works .tier_one .container .story .wrap .row .col-lg-4 .card:hover{background:#b2e9ff;box-shadow:0 16px 14px rgba(0,0,0,.1)}.main section.works .tier_one .container .story .wrap .row .col-lg-4 .card:hover h4{color:#063a4f}.main section.works .tier_one .container .story .wrap .row .col-lg-4 .card:hover p{color:#000}.main section.footer .tier_one .container{padding:8em 2em}.main section.footer .tier_one .container .wrap{text-align:center}.main section.footer .tier_one .container .wrap p{color:rgba(6,58,79,.6);font-size:22px;line-height:40px;margin-bottom:0;font-weight:600}.main section.footer .tier_two{background:#fafafa}.main section.footer .tier_two .container{padding:5em 2em 0}.main section.footer .tier_two .container .row{align-items:center}.main section.footer .tier_two .container .row .col-lg-2 .brand-logo{height:212px}.main section.footer .tier_two .container .row .col-lg-2 .brand-logo img{width:96px}.main section.footer .tier_two .container .row .link-menu{display:flex;justify-content:stretch;align-items:flex-start}.main section.footer .tier_two .container .row .link-menu .items{height:212px;width:33.3%}.main section.footer .tier_two .container .row .link-menu .items h4{font-size:16px;color:#063a4f;font-weight:500}.main section.footer .tier_two .container .row .link-menu .items ul{margin:0;padding:0;list-style:none}.main section.footer .tier_two .container .row .link-menu .items ul li a{text-decoration:none;font-size:12px;color:#063a4f;opacity:.8;padding:.4em 0}.main section.footer .tier_three{background:#fafafa}.main section.footer .tier_three .container{padding:0 2em 2em}.main section.footer .tier_three .container .row .col-lg-12 p{font-size:12px;color:rgba(6,58,79,.6);text-align:center}@media only screen and (min-width:320px) and (max-width:767px){.main section.services .tier_one .container .story .wrap .row .col-lg-4 .card,.main section.vitual{height:100%}.main section.vitual .tier_one .container{padding:2em}.main section.vitual .tier_one .container .h3ro h1{font-size:37px;line-height:97.52%}.main section.vitual .tier_one .container .h3ro p{font-size:1.2em}.main section.aboutUs .tier_one .container .story h2,.main section.services .tier_one .container .story h2{font-size:43px}.main section.vitual .deco-bg{display:none}.main section.aboutUs .tier_one .container{padding:5em 0 7em}.main section.aboutUs .tier_one .container .story{padding:4em 2em 0;box-shadow:0 5px 15px rgba(0,0,0,.08)}.main section.aboutUs .tier_one .container .story p.note{text-align:left}.main section.aboutUs .tier_one .container .story .wrap .card{padding:1em 0 0}.main section.services .tier_one .container{padding:5em 2em}.main section.services .tier_one .container .story p.note{margin-bottom:10em}.main section.services .tier_one .container .story .wrap .row .col-lg-4{margin-bottom:2em}.main section.works .tier_one .container{padding:8em 2em 13em}.main section.works .tier_one .container .story h2{font-size:57px}.main section.works .tier_one .container .story .wrap .row .col-lg-4 .card{height:auto}.main section.footer .tier_two .container .row .col-lg-2 .brand-logo{height:133px}}@media only screen and (min-width:768px) and (max-width:991px){.main section.vitual .tier_one .container .h3ro h1{font-size:3.4em}.main section.aboutUs .tier_one .container .story h2,.main section.services .tier_one .container .story h2,.main section.works .tier_one .container .story h2{font-size:57px}.main section.vitual .deco-bg{right:0}.main section.vitual .deco-bg img{width:26em}.main section.aboutUs .tier_one .container .story{padding:4em 3em 0}.main section.services .tier_one .container .story p.note{margin-bottom:10em}.main section.services .tier_one .container .story .wrap .row .col-lg-4{margin-bottom:2em}.main section.services .tier_one .container .story .wrap .row .col-lg-4 .card{height:100%}.main section.works .tier_one .container .story .wrap .row .col-lg-4 .card{height:auto}.main section.footer .tier_one .container{padding:4em 2em 7em}}
+.clear {
+  *zoom: 1;
+}
+.clear:after {
+  clear: both;
+}
+
+body {
+  box-sizing: content-box;
+  text-rendering: geometricPrecision;
+}
+body h1, body h2, body h3, body h4 {
+  font-family: "Oxygen", sans-serif;
+}
+body p {
+  font-family: "Roboto", sans-serif;
+}
+
+.home header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 50;
+}
+.home header .container {
+  padding: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.home header .container a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.home header .container a img {
+  width: 8em;
+}
+.home header .container nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  padding-left: 0em;
+  margin-bottom: 0em;
+  display: none;
+}
+.home header .container nav ul li {
+  margin-right: 2em;
+}
+.home header .container nav ul li span {
+  background-color: #fce4ec;
+  border-radius: 50%;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.1s ease-in;
+          transition: 0.1s ease-in;
+  cursor: pointer;
+  font-size: 12px;
+}
+.home header .container nav ul li span i.fab {
+  color: #f50c4a;
+}
+.home header .container nav ul li span a {
+  text-decoration: none;
+  background-color: transparent;
+}
+.home header .container nav ul li span:hover {
+  background: #f50c4a;
+}
+.home header .container nav ul li span:hover i.fab {
+  color: #fff;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .home header .container nav ul li span {
+    background: #eeeeee;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .home header .container {
+    padding: 2em;
+  }
+  .home header .container nav {
+    display: none;
+  }
+}
+
+.main ::-webkit-scrollbar {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE 10+ */
+}
+.main html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.main section.vitual {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.main section.vitual .tier_one {
+  margin: 8em 0em 0em;
+  width: 100%;
+}
+.main section.vitual .tier_one .container {
+  padding: 2em 4em;
+}
+.main section.vitual .tier_one .container .h3ro {
+  position: relative;
+  z-index: 2;
+}
+.main section.vitual .tier_one .container .h3ro h1 {
+  font-size: 5.4em;
+  line-height: 1.1em;
+  padding-right: 6em;
+  font-weight: 700;
+  width: 14em;
+  margin-bottom: 0.5m;
+}
+.main section.vitual .tier_one .container .h3ro p {
+  font-size: 1.5em;
+  color: rgba(6, 58, 79, 0.6);
+}
+.main section.vitual .deco-bg {
+  position: absolute;
+  top: 11em;
+  bottom: 0em;
+  right: 5em;
+}
+.main section.vitual .deco-bg img {
+  width: 34em;
+}
+.main section.aboutUs {
+  position: relative;
+  overflow: hidden;
+  background: white;
+}
+.main section.aboutUs .tier_one .container {
+  padding: 5em 4em 7em;
+}
+.main section.aboutUs .tier_one .container .story {
+  background: #fff;
+  border: none;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4em 8em 0em;
+}
+.main section.aboutUs .tier_one .container .story h2 {
+  font-size: 68px;
+  color: #f50c4a;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+.main section.aboutUs .tier_one .container .story p.note {
+  color: rgba(6, 58, 79, 0.6);
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 0em;
+  font-weight: 600;
+  text-align: center;
+}
+.main section.aboutUs .tier_one .container .story .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: auto;
+  margin: 3em 0em 2em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main section.aboutUs .tier_one .container .story .wrap .card {
+  border: none;
+  background: none;
+  margin-bottom: 2em;
+  border-radius: 0em;
+  padding: 1em 2em 0em;
+}
+.main section.aboutUs .tier_one .container .story .wrap .card h3 {
+  font-weight: 500;
+  color: #073b50;
+  font-size: 26px;
+  font-weight: 600;
+}
+.main section.aboutUs .tier_one .container .story .wrap .card p {
+  color: rgba(6, 58, 79, 0.6);
+  font-size: 13px;
+  line-height: 185%;
+}
+.main section.services {
+  position: relative;
+  background: rgba(252, 228, 236, 0.22);
+  overflow: hidden;
+  z-index: 3;
+  margin-top: -20em;
+}
+.main section.services .tier_one .container {
+  padding: 8em 4em;
+}
+.main section.services .tier_one .container .story {
+  position: relative;
+  z-index: 3;
+  margin-top: 14em;
+}
+.main section.services .tier_one .container .story h2 {
+  font-size: 68px;
+  color: #063a4f;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+.main section.services .tier_one .container .story p.note {
+  padding-right: 1.5em;
+  color: #063a4f;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 600;
+}
+.main section.services .tier_one .container .story .wrap {
+  margin-top: 5em;
+}
+.main section.services .tier_one .container .story .wrap .row .col-lg-4 .card {
+  padding: 1.2em;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2em;
+  height: 350px;
+}
+.main section.services .tier_one .container .story .wrap .row .col-lg-4 .card .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.main section.services .tier_one .container .story .wrap .row .col-lg-4 .card .icon img {
+  width: 50px;
+  -webkit-filter: opacity(0.4);
+          filter: opacity(0.4);
+}
+.main section.services .tier_one .container .story .wrap .row .col-lg-4 .card h4 {
+  font-weight: 500;
+  color: #f50c4a;
+  font-size: 15px;
+  margin-top: 1.5em;
+  font-weight: 700;
+}
+.main section.services .tier_one .container .story .wrap .row .col-lg-4 .card p {
+  color: rgba(6, 58, 79, 0.4);
+  font-size: 13px;
+  line-height: 185%;
+  font-weight: 600;
+}
+.main section.services .tier_one .container .story .wrap .row .col-lg-4 .card:hover {
+  background: #b2e9ff;
+  box-shadow: 0 16px 14px rgba(0, 0, 0, 0.1);
+}
+.main section.services .tier_one .container .story .wrap .row .col-lg-4 .card:hover .icon img {
+  -webkit-filter: saturate(0);
+          filter: saturate(0);
+}
+.main section.services .tier_one .container .story .wrap .row .col-lg-4 .card:hover h4 {
+  color: #063a4f;
+}
+.main section.services .tier_one .container .story .wrap .row .col-lg-4 .card:hover p {
+  color: #000;
+}
+.main section.works {
+  position: relative;
+  overflow: hidden;
+}
+.main section.works .tier_one .container {
+  padding: 5em 4em 8em;
+}
+.main section.works .tier_one .container .story h2 {
+  font-size: 68px;
+  color: #f50c4a;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+.main section.works .tier_one .container .story p.note {
+  color: rgba(6, 58, 79, 0.6);
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 0em;
+  font-weight: 600;
+}
+.main section.works .tier_one .container .story .wrap {
+  margin-top: 4em;
+}
+.main section.works .tier_one .container .story .wrap .row .col-lg-4 .card {
+  padding: 1.2em;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2em;
+  -webkit-transition: background 0.2s;
+          transition: background 0.2s;
+  height: 200px;
+}
+.main section.works .tier_one .container .story .wrap .row .col-lg-4 .card h3 {
+  font-weight: 500;
+  color: #f50c4a;
+  font-size: 20px;
+  font-weight: 700;
+}
+.main section.works .tier_one .container .story .wrap .row .col-lg-4 .card p {
+  color: rgba(6, 58, 79, 0.4);
+  font-size: 12px;
+  line-height: 185%;
+  font-weight: 600;
+}
+.main section.works .tier_one .container .story .wrap .row .col-lg-4 .card:hover {
+  background: #b2e9ff;
+  box-shadow: 0 16px 14px rgba(0, 0, 0, 0.1);
+}
+.main section.works .tier_one .container .story .wrap .row .col-lg-4 .card:hover .icon img {
+  -webkit-filter: saturate(0);
+          filter: saturate(0);
+}
+.main section.works .tier_one .container .story .wrap .row .col-lg-4 .card:hover h4 {
+  color: #063a4f;
+}
+.main section.works .tier_one .container .story .wrap .row .col-lg-4 .card:hover p {
+  color: #000;
+}
+.main section.footer .tier_one .container {
+  padding: 8em 2em;
+}
+.main section.footer .tier_one .container .wrap {
+  text-align: center;
+}
+.main section.footer .tier_one .container .wrap p {
+  color: rgba(6, 58, 79, 0.6);
+  font-size: 22px;
+  line-height: 40px;
+  margin-bottom: 0em;
+  font-weight: 600;
+}
+.main section.footer .tier_two {
+  background: #fafafa;
+}
+.main section.footer .tier_two .container {
+  padding: 5em 2em 0em;
+}
+.main section.footer .tier_two .container .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main section.footer .tier_two .container .row .col-lg-2 .brand-logo {
+  height: 212px;
+}
+.main section.footer .tier_two .container .row .col-lg-2 .brand-logo img {
+  width: 96px;
+}
+.main section.footer .tier_two .container .row .link-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.main section.footer .tier_two .container .row .link-menu .items {
+  height: 212px;
+  width: 33.3%;
+}
+.main section.footer .tier_two .container .row .link-menu .items h4 {
+  font-size: 16px;
+  color: #063a4f;
+  font-weight: 500;
+}
+.main section.footer .tier_two .container .row .link-menu .items ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main section.footer .tier_two .container .row .link-menu .items ul li a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #063a4f;
+  opacity: 0.8;
+  padding: 0.4em 0;
+}
+.main section.footer .tier_three {
+  background: #fafafa;
+}
+.main section.footer .tier_three .container {
+  padding: 0em 2em 2em;
+}
+.main section.footer .tier_three .container .row .col-lg-12 p {
+  font-size: 12px;
+  color: rgba(6, 58, 79, 0.6);
+  text-align: center;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .main section.vitual {
+    height: 100%;
+  }
+  .main section.vitual .tier_one .container {
+    padding: 2em 2em;
+  }
+  .main section.vitual .tier_one .container .h3ro h1 {
+    font-size: 37px;
+    line-height: 97.52%;
+  }
+  .main section.vitual .tier_one .container .h3ro p {
+    font-size: 1.2em;
+  }
+  .main section.vitual .deco-bg {
+    display: none;
+  }
+  .main section.aboutUs .tier_one .container {
+    padding: 5em 0em 7em;
+  }
+  .main section.aboutUs .tier_one .container .story {
+    padding: 4em 2em 0em;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
+  }
+  .main section.aboutUs .tier_one .container .story h2 {
+    font-size: 43px;
+  }
+  .main section.aboutUs .tier_one .container .story p.note {
+    text-align: left;
+  }
+  .main section.aboutUs .tier_one .container .story .wrap .card {
+    padding: 1em 0em 0em;
+  }
+  .main section.services .tier_one .container {
+    padding: 5em 2em;
+  }
+  .main section.services .tier_one .container .story h2 {
+    font-size: 43px;
+  }
+  .main section.services .tier_one .container .story p.note {
+    margin-bottom: 10em;
+  }
+  .main section.services .tier_one .container .story .wrap .row .col-lg-4 {
+    margin-bottom: 2em;
+  }
+  .main section.services .tier_one .container .story .wrap .row .col-lg-4 .card {
+    height: 100%;
+  }
+  .main section.works .tier_one .container {
+    padding: 8em 2em 13em;
+  }
+  .main section.works .tier_one .container .story h2 {
+    font-size: 57px;
+  }
+  .main section.works .tier_one .container .story .wrap .row .col-lg-4 .card {
+    height: auto;
+  }
+  .main section.footer .tier_two .container .row .col-lg-2 .brand-logo {
+    height: 133px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .main section.vitual .tier_one .container .h3ro h1 {
+    font-size: 3.4em;
+  }
+  .main section.vitual .deco-bg {
+    right: 0em;
+  }
+  .main section.vitual .deco-bg img {
+    width: 26em;
+  }
+  .main section.aboutUs .tier_one .container .story {
+    padding: 4em 3em 0em;
+  }
+  .main section.aboutUs .tier_one .container .story h2 {
+    font-size: 57px;
+  }
+  .main section.services .tier_one .container .story h2 {
+    font-size: 57px;
+  }
+  .main section.services .tier_one .container .story p.note {
+    margin-bottom: 10em;
+  }
+  .main section.services .tier_one .container .story .wrap .row .col-lg-4 {
+    margin-bottom: 2em;
+  }
+  .main section.services .tier_one .container .story .wrap .row .col-lg-4 .card {
+    height: 100%;
+  }
+  .main section.works .tier_one .container .story h2 {
+    font-size: 57px;
+  }
+  .main section.works .tier_one .container .story .wrap .row .col-lg-4 .card {
+    height: auto;
+  }
+  .main section.footer .tier_one .container {
+    padding: 4em 2em 7em;
+  }
+}
